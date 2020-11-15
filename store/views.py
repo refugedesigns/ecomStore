@@ -2,10 +2,13 @@ from django.shortcuts import render
 
 # Create your views here.
 def storeView(request):
-    return render(request,template_name,context)
+    context = {}
+    return render(request,'store/store.html',context)
 
-def productView(request):
-    return render(request,template_name,context)
+def checkoutView(request):
+    context = {}
+    return render(request,'store/checkout.html',context)
 
-def catView(request):
-    return render(request,template_name,context)
+def cartView(request):
+    context = {}
+    return render(request,'store/cart.html',context)
